@@ -81,8 +81,7 @@
     this.classList.remove('playing'); //remove the transformed class
   }
 
-  const keys = document.querySelectorAll('.key'); // array of DOM keys
-  
+  const keys = document.querySelectorAll('.key');             // array of DOM keys
   keys.forEach(key =>                                         // Attach event listener on each DOM element
     key.addEventListener('transitionend', removeTransition)); // "transitionend" is when everything is finished
   window.addEventListener("keydown", playSound); // init
